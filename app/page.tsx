@@ -5,7 +5,7 @@ import { Button } from "./components/ui/button"
 import Image from "next/image"
 import { Card, CardContent } from "./components/ui/card"
 import { db } from "./_lib/prisma"
-import BabershopItem from "./components/barbershop-item"
+import BarbershopItem from "./components/barbershop-item"
 import { quickSearchOptions } from "./_constants/search"
 import BookingItem from "./components/booking-item"
 
@@ -68,7 +68,7 @@ const Home = async () => {
         </h2>
         <div className="[&:: -webkit-scrollbar]:hidden flex gap-4 overflow-auto">
           {barbershops.map((barbershop) => (
-            <BabershopItem key={barbershop.id} barbershop={barbershop} />
+            <BarbershopItem key={barbershop.id} barbershop={barbershop} />
           ))}
         </div>
 
@@ -78,7 +78,7 @@ const Home = async () => {
         </h2>
         <div className="[&:: -webkit-scrollbar]:hidden flex gap-4 overflow-auto">
           {popularBarbershops.map((barbershop) => (
-            <BabershopItem key={barbershop.id} barbershop={barbershop} />
+            <BarbershopItem key={barbershop.id} barbershop={barbershop} />
           ))}
         </div>
       </div>
