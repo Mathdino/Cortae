@@ -1,4 +1,5 @@
-npx shadcn@latest sonner
+npx shadcn@latest add sonner
+npx shadcn@latest add sheet
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
