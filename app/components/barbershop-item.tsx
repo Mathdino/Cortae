@@ -4,9 +4,10 @@ import { Button } from "./ui/button"
 import { Card, CardContent } from "./ui/card"
 import Image from "next/image"
 import Link from "next/link"
+import { Barbershop } from "@prisma/client"
 
 interface BarbershopItemProps {
-  babershop: BarberShop
+  barbershop: Barbershop
 }
 
 const BarbershopItem = ({ barbershop }: BarbershopItemProps) => {
@@ -19,13 +20,14 @@ const BarbershopItem = ({ barbershop }: BarbershopItemProps) => {
             alt={barbershop.name}
             fill
             className="rounded-2xl object-cover"
-            src={barbershop.image.Url}
+            src={barbershop.imageUrl}
           />
-        </div>
-        <Badge className="absolute left-2 top-2 space-x-1" variant="secondary">
+          <Badge className="absolute left-2 top-2 space-x-1" variant="secondary">
           <StarIcon size={12} className="fill-primary text-primary" />
           <p className="text-xs font-semibold">5,0</p>
         </Badge>
+        </div>
+        
 
         {/* TEXTO */}
         <div className="px-1 py-1">
@@ -39,5 +41,4 @@ const BarbershopItem = ({ barbershop }: BarbershopItemProps) => {
     </Card>
   )
 }
-
 export default BarbershopItem
