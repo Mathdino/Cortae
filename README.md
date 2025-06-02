@@ -1,4 +1,13 @@
-npx shadcn@latest add sonner
+npx shadcn@latest add dialog
+npm install next-auth
+npm install @auth/prisma-adapter
+
+---
+
+No Schema.prisma
+npx prisma format
+npx prisma migrate dev --name add_auth_tables
+npx prisma studio
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
