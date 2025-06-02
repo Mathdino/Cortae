@@ -9,6 +9,15 @@ npx prisma format
 npx prisma migrate dev --name add_auth_tables
 npx prisma studio
 
+---
+
+Acessar google developer console
+No .env colar :
+
+GOOGLE_CLIENT_ID="1093538996891-o3ar4oigc0f4r535hncss5rfl39tg4t4.apps.googleusercontent.com
+"
+GOOGLE_CLIENT_SECRET="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"
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
