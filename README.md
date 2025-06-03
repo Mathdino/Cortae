@@ -1,15 +1,3 @@
-npx shadcn@latest add dialog
-npm install next-auth
-npm install @auth/prisma-adapter
-
----
-
-No Schema.prisma
-npx prisma format
-npx prisma migrate dev --name add_auth_tables
-npx prisma studio
-
----
 
 Acessar google developer console
 No .env colar :

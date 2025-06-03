@@ -1,12 +1,11 @@
-import { SearchIcon } from "lucide-react"
 import Header from "./components/header"
-import { Input } from "./components/ui/input"
 import { Button } from "./components/ui/button"
 import Image from "next/image"
 import { db } from "./_lib/prisma"
 import BarbershopItem from "./components/barbershop-item"
 import { quickSearchOptions } from "./_constants/search"
 import BookingItem from "./components/booking-item"
+import Search from "./components/search"
 
 const Home = async () => {
   //Chamar banco de Dados
@@ -26,12 +25,10 @@ const Home = async () => {
         <p>Quinta-feira, 29 de Maio</p>
 
         {/* BUSCA */}
-        <div className="mt-6 flex items-center gap-2">
-          <Input placeholder="Faça sua Busca.." />
-          <Button>
-            <SearchIcon />
-          </Button>
+        <div className="mt-6">
+          <Search />
         </div>
+        
 
         {/*BUSCA RÁPIDA*/}
         <div className="[&:: -webkit-scrollbar]:hidden mt-6 flex gap-3 overflow-x-scroll">
