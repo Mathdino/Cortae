@@ -1,10 +1,15 @@
+<!-- Acessar Google developer console
 
-Acessar google developer console
 No .env colar :
-
 GOOGLE_CLIENT_ID="1093538996891-o3ar4oigc0f4r535hncss5rfl39tg4t4.apps.googleusercontent.com
 "
 GOOGLE_CLIENT_SECRET="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"
+
+Instalações
+npx shadcn@latest add calendar
+npm install date-fns
+
+-->
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
