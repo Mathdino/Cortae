@@ -1,3 +1,9 @@
+<!-- GOOGLE_CLIENT_ID="1093538996891-o3ar4oigc0f4r535hncss5rfl39tg4t4.apps.googleusercontent.com
+"
+GOOGLE_CLIENT_SECRET="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"
+
+NEXT_AUTH_SECRET="secret" -->
+
 # 🪒 Cortae - Sistema de Agendamento para Barbearias
 
 Cortae é uma plataforma SaaS moderna que conecta clientes a barbearias, oferecendo um sistema de agendamento intuitivo e eficiente.
@@ -15,6 +21,7 @@ Cortae é uma plataforma SaaS moderna que conecta clientes a barbearias, oferece
 ## 🛠️ Tecnologias Utilizadas
 
 ### Frontend
+
 - [Next.js 14](https://nextjs.org/) - Framework React para desenvolvimento web
 - [TypeScript](https://www.typescriptlang.org/) - Superset JavaScript com tipagem estática
 - [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário
@@ -24,27 +31,32 @@ Cortae é uma plataforma SaaS moderna que conecta clientes a barbearias, oferece
 - [Zod](https://zod.dev/) - Validação de esquemas
 
 ### Backend
+
 - [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction) - API Routes do Next.js
 - [Prisma](https://www.prisma.io/) - ORM para banco de dados
 - [PostgreSQL](https://www.postgresql.org/) - Banco de dados relacional
 
 ### Autenticação
+
 - [NextAuth.js](https://next-auth.js.org/) - Autenticação com Google OAuth
 
 ## 🚀 Como Executar o Projeto
 
 1. Clone o repositório
+
 ```bash
 git clone [url-do-repositorio]
 ```
 
 2. Instale as dependências
+
 ```bash
 npm install
 ```
 
 3. Configure as variáveis de ambiente
-Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+   Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+
 ```env
 GOOGLE_CLIENT_ID="seu-client-id"
 GOOGLE_CLIENT_SECRET="seu-client-secret"
@@ -54,11 +66,13 @@ NEXTAUTH_URL="http://localhost:3000"
 ```
 
 4. Execute as migrações do banco de dados
+
 ```bash
 npx prisma migrate dev
 ```
 
 5. Inicie o servidor de desenvolvimento
+
 ```bash
 npm run dev
 ```
@@ -88,4 +102,3 @@ Acesse [http://localhost:3000](http://localhost:3000) para ver a aplicação em 
 ## 🤝 Contribuindo
 
 Contribuições são bem-vindas! Por favor, leia as diretrizes de contribuição antes de submeter um pull request.
-
