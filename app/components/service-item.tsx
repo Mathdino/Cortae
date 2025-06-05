@@ -30,6 +30,10 @@ interface ServiceItemProps {
 }
 
 const TIME_LIST = [
+  "06:00",
+  "06:30",
+  "07:00",
+  "07:30",
   "08:00",
   "08:30",
   "09:00",
