@@ -1,11 +1,8 @@
-import { MenuIcon } from "lucide-react"
-import { Button } from "./ui/button"
 import Image from "next/image"
-import {
-  Sheet,
-  SheetTrigger,
-} from "./ui/sheet"
 import { Card, CardContent } from "./ui/card"
+import { Button } from "./ui/button"
+import { MenuIcon } from "lucide-react"
+import { Sheet, SheetTrigger } from "./ui/sheet"
 import SidebarSheet from "./sidebar-sheet"
 import Link from "next/link"
 
@@ -14,7 +11,7 @@ const Header = () => {
     <Card>
       <CardContent className="flex flex-row items-center justify-between p-5">
         <Link href="/">
-        <Image src="/logo.png" alt="logo" width={120} height={18} />
+          <Image alt="FSW Barber" src="/logo.png" height={18} width={120} />
         </Link>
 
         <Sheet>
@@ -25,9 +22,9 @@ const Header = () => {
           </SheetTrigger>
           <SidebarSheet />
         </Sheet>
-        
       </CardContent>
     </Card>
   )
 }
+
 export default Header
