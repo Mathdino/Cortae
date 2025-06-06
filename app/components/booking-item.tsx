@@ -17,6 +17,7 @@ import {
 } from "./ui/sheet"
 import Image from "next/image"
 import PhoneItem from "./phone-item"
+import PixItem from "./pix-item"
 import { Button } from "./ui/button"
 import {
   Dialog,
@@ -147,9 +148,8 @@ const BookingItem = ({ booking }: BookingItemProps) => {
           </div>
 
           <div className="space-y-3">
-            {barbershop.phones.map((phone, index) => (
-              <PhoneItem key={index} phone={phone} />
-            ))}
+            <PhoneItem phone={barbershop.phones} />
+            <PixItem pix={barbershop.pix} />
           </div>
         </div>
         <SheetFooter className="mt-6">

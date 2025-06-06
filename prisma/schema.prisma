@@ -63,7 +63,8 @@ model Barbershop {
   id          String              @id @default(uuid())
   name        String
   address     String
-  phones      String[]
+  phones      String
+  pix         String
   description String
   imageUrl    String
   createdAt   DateTime            @default(now())

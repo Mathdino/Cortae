@@ -1,5 +1,6 @@
 import { db } from "@/app/_lib/prisma"
 import PhoneItem from "@/app/components/phone-item"
+import PixItem from "@/app/components/pix-item"
 import ServiceItem from "@/app/components/service-item"
 import SidebarSheet from "@/app/components/sidebar-sheet"
 import { Button } from "@/app/components/ui/button"
@@ -101,9 +102,8 @@ const BarbershopPage = async ({ params }: BarbershopPageProps) => {
 
       {/*CONTATO*/}
       <div className="space-y-3 p-5">
-        {barbershop.phones.map((phone) => (
-          <PhoneItem key={phone} phone={phone} />
-        ))}
+        <PhoneItem phone={barbershop.phones} />
+        <PixItem pix={barbershop.pix} />
       </div>
     </div>
   )
